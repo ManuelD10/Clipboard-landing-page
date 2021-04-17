@@ -1,0 +1,17 @@
+body {
+    background-image: url(../../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    font-family: $fontFamily;
+    font-size: 18px;
+}
+
+p {
+    line-height: 30px;
+    font-size: 16px;
+    color: $GrayishBlues;
+}
+
+header {
+    text-align: center;
+    color: $DarkBlue;
+}

@@ -6,12 +6,52 @@ body {
 }
 
 p {
-    line-height: 30px;
+    line-height: 26px;
     font-size: 16px;
+    padding: 0px 25px;
     color: $GrayishBlues;
 }
 
 header {
     text-align: center;
     color: $DarkBlue;
+    h1 {
+        font-size: 34px;
+    }
+    img {
+        width: 110px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+}
+
+%buttons {
+    width: 90%;
+    border-radius: 40px;
+    color: white;
+    border: 0px;
+    font-family: "Bai Jamjuree", sans-serif;
+    height: 55px;
+    font-size: 16px;
+}
+
+.btn-download-ios {
+    @extend %buttons;
+    background-color: $StrongCyan;
+    border-bottom: 3px solid $DarkenCyan;
+    box-shadow: 0px 3px 18px $LightCyan;
+    margin-top: 40px;
+}
+
+.btn-download-mac {
+    @extend %buttons;
+    background-color: $LightBlue;
+    margin-top: 25px;
+    border-bottom: 3px solid $DarkenBlue;
+    box-shadow: 0px 3px 18px $LightenLightBlue;
+}
+
+//Fin Header
+section {
+    margin-top: 130px;
 }

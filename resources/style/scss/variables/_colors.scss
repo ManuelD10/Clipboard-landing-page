@@ -4,3 +4,9 @@ $LightBlue: hsl(233, 100%, 69%);
 //Neutral
 $DarkBlue: hsl(210, 10%, 33%);
 $GrayishBlues: hsl(201, 11%, 66%);
+//Dark Color
+$DarkenCyan: darken($StrongCyan, 10%);
+$DarkenBlue: darken($LightBlue, 5%);
+// Light Color
+$LightCyan: lighten($StrongCyan, 30%);
+$LightenLightBlue: lighten($LightBlue, 20%);

@@ -6,14 +6,51 @@ body {
 }
 
 p {
-  line-height: 30px;
+  line-height: 26px;
   font-size: 16px;
+  padding: 0px 25px;
   color: #9fabb2;
 }
 
 header {
   text-align: center;
   color: #4c545d;
+}
+header h1 {
+  font-size: 34px;
+}
+header img {
+  width: 110px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.btn-download-mac, .btn-download-ios {
+  width: 90%;
+  border-radius: 40px;
+  color: white;
+  border: 0px;
+  font-family: "Bai Jamjuree", sans-serif;
+  height: 55px;
+  font-size: 16px;
+}
+
+.btn-download-ios {
+  background-color: #26baa4;
+  border-bottom: 3px solid #1d907f;
+  box-shadow: 0px 3px 18px #91e8db;
+  margin-top: 40px;
+}
+
+.btn-download-mac {
+  background-color: #6173ff;
+  margin-top: 25px;
+  border-bottom: 3px solid #475dff;
+  box-shadow: 0px 3px 18px #c7cdff;
+}
+
+section {
+  margin-top: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */

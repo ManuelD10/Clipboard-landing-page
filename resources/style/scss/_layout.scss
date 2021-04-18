@@ -12,6 +12,11 @@ p {
     color: $GrayishBlues;
 }
 
+h3,
+h2 {
+    color: $DarkBlue;
+}
+
 header {
     text-align: center;
     color: $DarkBlue;
@@ -54,4 +59,33 @@ header {
 //Fin Header
 section {
     margin-top: 130px;
+}
+
+.ctn-keep {
+    text-align: center;
+    width: 100%;
+    h2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.ctn-features-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-feature-1 {
+    width: 86%;
+    margin: 35px auto;
+    img {
+        max-width: 100%;
+    }
+}
+
+.features-1 {
+    h3 {
+        margin-top: 45px;
+        margin-bottom: 15px;
+    }
 }

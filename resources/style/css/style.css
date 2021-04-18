@@ -56,6 +56,7 @@ header img {
 
 section {
   margin-top: 130px;
+  text-align: center;
 }
 
 .ctn-keep {
@@ -83,6 +84,30 @@ section {
 .features-1 h3 {
   margin-top: 45px;
   margin-bottom: 15px;
+}
+
+.ctn-access h2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-access {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.img-access img {
+  max-width: 100%;
+}
+
+.ctn-supercharge h2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ctn-features-2 {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

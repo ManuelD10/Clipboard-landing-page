@@ -47,10 +47,16 @@ header img {
   font-family: "Bai Jamjuree", sans-serif;
   height: 55px;
   font-size: 16px;
+  cursor: pointer;
 }
 @media only screen and (min-width: 600px) {
   .btn-download-mac, .btn-download-ios {
     width: 30%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .btn-download-mac, .btn-download-ios {
+    width: 15%;
   }
 }
 
@@ -60,12 +66,18 @@ header img {
   box-shadow: 0px 3px 18px #91e8db;
   margin-top: 40px;
 }
+.btn-download-ios:hover {
+  background-color: #2acfb7;
+}
 
 .btn-download-mac {
   background-color: #6173ff;
   margin-top: 25px;
   border-bottom: 3px solid #475dff;
   box-shadow: 0px 3px 18px #c7cdff;
+}
+.btn-download-mac:hover {
+  background-color: #7a8aff;
 }
 @media only screen and (min-width: 600px) {
   .btn-download-mac {
@@ -92,6 +104,11 @@ section {
     margin: 15px auto;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .ctn-keep p {
+    width: 43%;
+  }
+}
 
 .ctn-features-1 {
   display: flex;
@@ -100,6 +117,11 @@ section {
 @media only screen and (min-width: 1024px) {
   .ctn-features-1 {
     flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .ctn-features-1 {
+    margin-top: 60px;
   }
 }
 
@@ -113,12 +135,26 @@ section {
 @media only screen and (min-width: 1024px) {
   .img-feature-1 {
     overflow: hidden;
+    width: 55%;
   }
   .img-feature-1 img {
     margin-left: -45px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .img-feature-1 {
+    width: 55%;
+    margin: 0px;
+  }
+  .img-feature-1 img {
+    margin-left: -105px;
+  }
+}
 
+.features-1 h3 {
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
 @media only screen and (min-width: 1024px) {
   .features-1 {
     text-align: left;
@@ -129,9 +165,14 @@ section {
     padding-left: 0px;
   }
 }
-.features-1 h3 {
-  margin-top: 45px;
-  margin-bottom: 15px;
+@media only screen and (min-width: 1440px) {
+  .features-1 {
+    padding-left: 20px;
+    margin-top: 60px;
+  }
+  .features-1 p {
+    width: 340px;
+  }
 }
 
 .ctn-access h2 {
@@ -142,6 +183,11 @@ section {
   .ctn-access p {
     width: 60%;
     margin: 15px auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .ctn-access p {
+    width: 45%;
   }
 }
 
@@ -156,6 +202,11 @@ section {
 @media only screen and (min-width: 1024px) {
   .img-access {
     width: 70%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .img-access {
+    width: 55%;
   }
 }
 
@@ -186,6 +237,11 @@ section {
 @media only screen and (min-width: 1024px) {
   .feature-2 {
     width: 350px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .feature-2 {
+    width: 420px;
   }
 }
 
@@ -221,6 +277,11 @@ section {
     margin: 15px auto;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .ctn-clipboard p {
+    width: 44%;
+  }
+}
 
 .footer {
   background-color: #F5F6F8;
@@ -234,6 +295,11 @@ section {
   .footer {
     flex-direction: row;
     padding: 5px 100px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding: 5px 150px;
   }
 }
 
@@ -259,6 +325,9 @@ section {
 .footer-list-links a:first-child {
   margin-top: 0px;
 }
+.footer-list-links a:hover {
+  color: #26baa4;
+}
 @media only screen and (min-width: 1024px) {
   .footer-list-links {
     flex-direction: row;
@@ -274,6 +343,14 @@ section {
     text-align: left;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .footer-list-links {
+    margin-left: 120px;
+  }
+  .footer-list-links a {
+    width: 180px;
+  }
+}
 
 .footer-social-media {
   display: flex;
@@ -281,6 +358,9 @@ section {
   width: 250px;
   margin-top: 50px;
   justify-content: space-evenly;
+}
+.footer-social-media a:hover {
+  color: #26baa4;
 }
 @media only screen and (min-width: 1024px) {
   .footer-social-media {

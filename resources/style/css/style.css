@@ -10,7 +10,7 @@ body {
 p {
   line-height: 26px;
   font-size: 16px;
-  padding: 0px 25px;
+  padding: 0px 34px;
   color: #9fabb2;
 }
 
@@ -24,22 +24,34 @@ header {
   color: #4c545d;
 }
 header h1 {
-  font-size: 34px;
+  font-size: 32px;
+  padding: 0 15px;
 }
 header img {
   width: 110px;
   margin-top: 100px;
   margin-bottom: 30px;
 }
+@media only screen and (min-width: 600px) {
+  header p {
+    width: 537px;
+    margin: 0 auto;
+  }
+}
 
 .btn-download-mac, .btn-download-ios {
-  width: 90%;
+  width: 80%;
   border-radius: 40px;
   color: white;
   border: 0px;
   font-family: "Bai Jamjuree", sans-serif;
   height: 55px;
   font-size: 16px;
+}
+@media only screen and (min-width: 600px) {
+  .btn-download-mac, .btn-download-ios {
+    width: 30%;
+  }
 }
 
 .btn-download-ios {
@@ -55,6 +67,11 @@ header img {
   border-bottom: 3px solid #475dff;
   box-shadow: 0px 3px 18px #c7cdff;
 }
+@media only screen and (min-width: 600px) {
+  .btn-download-mac {
+    margin-left: 13px;
+  }
+}
 
 section {
   margin-top: 130px;
@@ -69,10 +86,21 @@ section {
   width: 80%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 1024px) {
+  .ctn-keep p {
+    width: 60%;
+    margin: 15px auto;
+  }
+}
 
 .ctn-features-1 {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  .ctn-features-1 {
+    flex-direction: row;
+  }
 }
 
 .img-feature-1 {
@@ -82,7 +110,25 @@ section {
 .img-feature-1 img {
   max-width: 100%;
 }
+@media only screen and (min-width: 1024px) {
+  .img-feature-1 {
+    overflow: hidden;
+  }
+  .img-feature-1 img {
+    margin-left: -45px;
+  }
+}
 
+@media only screen and (min-width: 1024px) {
+  .features-1 {
+    text-align: left;
+    padding-left: 50px;
+  }
+  .features-1 p {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
 .features-1 h3 {
   margin-top: 45px;
   margin-bottom: 15px;
@@ -92,6 +138,12 @@ section {
   width: 80%;
   margin: 0 auto;
 }
+@media only screen and (min-width: 1024px) {
+  .ctn-access p {
+    width: 60%;
+    margin: 15px auto;
+  }
+}
 
 .img-access {
   width: 90%;
@@ -100,6 +152,11 @@ section {
 }
 .img-access img {
   max-width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .img-access {
+    width: 70%;
+  }
 }
 
 .ctn-supercharge h2 {
@@ -111,9 +168,25 @@ section {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 600px) {
+  .ctn-features-2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
-.feature-1 {
+.feature-2 {
   margin-top: 60px;
+}
+@media only screen and (min-width: 600px) {
+  .feature-2 {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .feature-2 {
+    width: 350px;
+  }
 }
 
 .ctn-brands {
@@ -128,10 +201,25 @@ section {
 .ctn-brands img:first-child {
   margin-top: 0px;
 }
+@media only screen and (min-width: 600px) {
+  .ctn-brands {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .ctn-brands img {
+    margin-top: 0px;
+  }
+}
 
 .ctn-clipboard h2 {
   width: 80%;
   margin: 0 auto;
+}
+@media only screen and (min-width: 1024px) {
+  .ctn-clipboard p {
+    width: 60%;
+    margin: 15px auto;
+  }
 }
 
 .footer {
@@ -140,6 +228,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 35px;
+}
+@media only screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    padding: 5px 100px;
+  }
 }
 
 .footer-img {
@@ -164,6 +259,21 @@ section {
 .footer-list-links a:first-child {
   margin-top: 0px;
 }
+@media only screen and (min-width: 1024px) {
+  .footer-list-links {
+    flex-direction: row;
+    width: 550px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+  .footer-list-links a {
+    margin-top: 0px;
+    width: 160px;
+    height: 40px;
+    text-align: left;
+  }
+}
 
 .footer-social-media {
   display: flex;
@@ -172,10 +282,39 @@ section {
   margin-top: 50px;
   justify-content: space-evenly;
 }
+@media only screen and (min-width: 1024px) {
+  .footer-social-media {
+    width: 180px;
+    margin-top: 0px;
+    margin-left: auto;
+  }
+}
 
 .attribution {
   text-align: center;
   margin-top: 35px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .order-1 {
+    order: 1;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  .order-3 {
+    order: 3;
+  }
+
+  .order-4 {
+    order: 4;
+  }
+
+  .order-5 {
+    order: 5;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

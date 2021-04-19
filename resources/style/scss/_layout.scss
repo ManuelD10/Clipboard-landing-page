@@ -10,7 +10,7 @@ body {
 p {
     line-height: 26px;
     font-size: 16px;
-    padding: 0px 25px;
+    padding: 0px 34px;
     color: $GrayishBlues;
 }
 
@@ -23,23 +23,33 @@ header {
     text-align: center;
     color: $DarkBlue;
     h1 {
-        font-size: 34px;
+        font-size: 32px;
+        padding: 0 15px;
     }
     img {
         width: 110px;
         margin-top: 100px;
         margin-bottom: 30px;
     }
+    @include small {
+        p {
+            width: 537px;
+            margin: 0 auto;
+        }
+    }
 }
 
 %buttons {
-    width: 90%;
+    width: 80%;
     border-radius: 40px;
     color: white;
     border: 0px;
     font-family: "Bai Jamjuree", sans-serif;
     height: 55px;
     font-size: 16px;
+    @include small {
+        width: 30%;
+    }
 }
 
 .btn-download-ios {
@@ -56,6 +66,9 @@ header {
     margin-top: 25px;
     border-bottom: 3px solid $DarkenBlue;
     box-shadow: 0px 3px 18px $LightenLightBlue;
+    @include small {
+        margin-left: 13px;
+    }
 }
 
 //Fin Header
@@ -71,11 +84,20 @@ section {
         width: 80%;
         margin: 0 auto;
     }
+    @include medium {
+        p {
+            width: 60%;
+            margin: 15px auto;
+        }
+    }
 }
 
 .ctn-features-1 {
     display: flex;
     flex-direction: column;
+    @include medium {
+        flex-direction: row;
+    }
 }
 
 .img-feature-1 {
@@ -84,9 +106,23 @@ section {
     img {
         max-width: 100%;
     }
+    @include medium {
+        overflow: hidden;
+        img {
+            margin-left: -45px;
+        }
+    }
 }
 
 .features-1 {
+    @include medium {
+        text-align: left;
+        padding-left: 50px;
+        p {
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+    }
     h3 {
         margin-top: 45px;
         margin-bottom: 15px;
@@ -98,6 +134,12 @@ section {
         width: 80%;
         margin: 0 auto;
     }
+    @include medium {
+        p {
+            width: 60%;
+            margin: 15px auto;
+        }
+    }
 }
 
 .img-access {
@@ -106,6 +148,9 @@ section {
     margin-top: 60px;
     img {
         max-width: 100%;
+    }
+    @include medium {
+        width: 70%;
     }
 }
 
@@ -119,10 +164,20 @@ section {
 .ctn-features-2 {
     display: flex;
     flex-direction: column;
+    @include small {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
-.feature-1 {
+.feature-2 {
     margin-top: 60px;
+    @include small {
+        width: 250px;
+    }
+    @include medium {
+        width: 350px;
+    }
 }
 
 .ctn-brands {
@@ -136,12 +191,25 @@ section {
             margin-top: 0px;
         }
     }
+    @include small {
+        flex-direction: row;
+        justify-content: space-evenly;
+        img {
+            margin-top: 0px;
+        }
+    }
 }
 
 .ctn-clipboard {
     h2 {
         width: 80%;
         margin: 0 auto;
+    }
+    @include medium {
+        p {
+            width: 60%;
+            margin: 15px auto;
+        }
     }
 }
 
@@ -151,6 +219,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 35px;
+    @include medium {
+        flex-direction: row;
+        padding: 5px 100px;
+    }
 }
 
 .footer-img {
@@ -174,6 +247,19 @@ section {
             margin-top: 0px;
         }
     }
+    @include medium {
+        flex-direction: row;
+        width: 550px;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-top: 25px;
+        a {
+            margin-top: 0px;
+            width: 160px;
+            height: 40px;
+            text-align: left;
+        }
+    }
 }
 
 .footer-social-media {
@@ -182,9 +268,32 @@ section {
     width: 250px;
     margin-top: 50px;
     justify-content: space-evenly;
+    @include medium {
+        width: 180px;
+        margin-top: 0px;
+        margin-left: auto;
+    }
 }
 
 .attribution {
     text-align: center;
     margin-top: 35px;
+}
+
+@include medium {
+    .order-1 {
+        order: 1;
+    }
+    .order-2 {
+        order: 2;
+    }
+    .order-3 {
+        order: 3;
+    }
+    .order-4 {
+        order: 4;
+    }
+    .order-5 {
+        order: 5;
+    }
 }
